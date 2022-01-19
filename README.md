@@ -18,7 +18,7 @@ python sif.py "path/of/the/images"
 
 * -processes [int]<br>
 Specify the number of processes that multiprocessing should use. Default is 1 (single process).<br>
-<i>Exaple:</i>
+<i>Example:</i>
 ```
 python sif.py -processes 4 "C:\Users\Snakkos\Photos"
 ```
