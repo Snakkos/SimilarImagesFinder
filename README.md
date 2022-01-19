@@ -23,7 +23,7 @@ Specify the number of processes that multiprocessing should use. Default is 1 (s
 python sif.py -processes 4 "C:\Users\Snakkos\Photos"
 ```
 * -threshold [int]<br>
-Specify the threshold used when comparing images' hashes. Default is 4<br>
+Specify the threshold used when comparing images' hashes. Default is 4 (bigger -> less similar images)<br>
 <i>Example.</i>
 ```
 python sif.py -threshold 4 "C:\Users\Snakkos\Photos"
