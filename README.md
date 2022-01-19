@@ -15,6 +15,7 @@ python sif.py "path/of/the/images"
 ```
 
 <b>Command line arguments</b>
+
 * -processes [int]<br>
 Specify the number of processes that multiprocessing should use. Default is 1 (single process).<br>
 <i>Exaple:</i>
@@ -33,7 +34,8 @@ Use this command to extends the search of images to all subdirectories.<br>
 ```
 python sif.py -subdirs "C:\Users\Snakkos\Photos"
 ```
-<b>Performances</b>
+<b>Performances</b><br>
+
 I tested the program using an i7-4771 with 8 processes.<br>
 It compared 4952 images of an average size of 600kb in 4:40 minutes.<br>
 <i>Note:</i> The caching process is very IO intensive, especially if it uses more than one process. So the performance of this process could depends on the hard drive performance.
