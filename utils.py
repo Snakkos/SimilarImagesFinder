@@ -29,9 +29,6 @@ def hash_image(image):
 def find_similar(hashes_cache, threshold, index):
 
     for y in range(index + 1, len(hashes_cache)):
-        
-        first_hash = hashes_cache[index]
-        second_hash = hashes_cache[y]
 
-        if first_hash - second_hash < threshold:
+        if hashes_cache[index] - hashes_cache[y] < threshold:
             return (index, y)
