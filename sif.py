@@ -38,7 +38,7 @@ def parser():
     parser.add_argument("path")
     parser.add_argument("-subdirs", action="store_true")
     parser.add_argument("-processes", nargs='?', const=1, default=1, type=int, help="Number of CPUs to use.")
-    parser.add_argument("-treshold", nargs='?', const=4, default=4, type=int, help="The similarity treshold when comparing two images.")
+    parser.add_argument("-threshold", nargs='?', const=4, default=4, type=int, help="The similarity treshold when comparing two images.")
 
     return parser.parse_args()
 
@@ -49,7 +49,7 @@ if __name__ == '__main__':
     args = parser()
 
     images_list = utils.search_images(args.path, args.subdirs)
-    similar_list = main(args.processes, args.treshold)
+    similar_list = main(args.processes, args.threshold)
 
     if len(similar_list) <= 0:
         print("\nNo similar images found.")
