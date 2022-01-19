@@ -27,7 +27,7 @@ Specify the threshold used when comparing images hashes. Default is 4<br>
 ```
 python sif.py -threshold 4 "C:\Users\Snakkos\Photos"
 ```
-* -subdirs
+* -subdirs<br>
 Use this command to extends the search of images to all subdirectories.<br>
 <i>Example:</i>
 ```
